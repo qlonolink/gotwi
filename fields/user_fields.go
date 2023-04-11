@@ -16,6 +16,7 @@ const (
 	UserFieldUrl             UserField = "url"
 	UserFieldUsername        UserField = "username"
 	UserFieldVerified        UserField = "verified"
+	UserFieldVerifiedType    UserField = "verified_type"
 	UserFieldWithheld        UserField = "withheld"
 )
 
