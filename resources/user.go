@@ -16,6 +16,7 @@ type User struct {
 	PublicMetrics   *UserPublicMetrics `json:"public_metrics,omitempty"`
 	URL             *string            `json:"url,omitempty"`
 	Verified        *bool              `json:"verified,omitempty"`
+	VerifiedType    *string            `json:"verified_type,omitempty"`
 	Withheld        *UserWithheld      `json:"withheld,omitempty"`
 }
 
