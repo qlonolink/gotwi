@@ -3,8 +3,8 @@ package volumestream
 import (
 	"context"
 
-	"github.com/michimani/gotwi"
-	"github.com/michimani/gotwi/tweet/volumestream/types"
+	"github.com/qlonolink/gotwi"
+	"github.com/qlonolink/gotwi/tweet/volumestream/types"
 )
 
 const (

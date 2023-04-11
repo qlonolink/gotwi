@@ -3,8 +3,8 @@ package like
 import (
 	"context"
 
-	"github.com/michimani/gotwi"
-	"github.com/michimani/gotwi/tweet/like/types"
+	"github.com/qlonolink/gotwi"
+	"github.com/qlonolink/gotwi/tweet/like/types"
 )
 
 const (

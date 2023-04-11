@@ -3,8 +3,8 @@ package listtweetlookup
 import (
 	"context"
 
-	"github.com/michimani/gotwi"
-	"github.com/michimani/gotwi/list/listtweetlookup/types"
+	"github.com/qlonolink/gotwi"
+	"github.com/qlonolink/gotwi/list/listtweetlookup/types"
 )
 
 const listEndpoint = "https://api.twitter.com/2/lists/:id/tweets"

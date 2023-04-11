@@ -3,8 +3,8 @@ package follow
 import (
 	"context"
 
-	"github.com/michimani/gotwi"
-	"github.com/michimani/gotwi/user/follow/types"
+	"github.com/qlonolink/gotwi"
+	"github.com/qlonolink/gotwi/user/follow/types"
 )
 
 const (

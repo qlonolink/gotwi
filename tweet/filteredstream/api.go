@@ -3,8 +3,8 @@ package filteredstream
 import (
 	"context"
 
-	"github.com/michimani/gotwi"
-	"github.com/michimani/gotwi/tweet/filteredstream/types"
+	"github.com/qlonolink/gotwi"
+	"github.com/qlonolink/gotwi/tweet/filteredstream/types"
 )
 
 const (

@@ -3,8 +3,8 @@ package bookmark
 import (
 	"context"
 
-	"github.com/michimani/gotwi"
-	"github.com/michimani/gotwi/tweet/bookmark/types"
+	"github.com/qlonolink/gotwi"
+	"github.com/qlonolink/gotwi/tweet/bookmark/types"
 )
 
 const (

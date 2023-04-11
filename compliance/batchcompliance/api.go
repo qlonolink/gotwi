@@ -3,8 +3,8 @@ package batchcompliance
 import (
 	"context"
 
-	"github.com/michimani/gotwi"
-	"github.com/michimani/gotwi/compliance/batchcompliance/types"
+	"github.com/qlonolink/gotwi"
+	"github.com/qlonolink/gotwi/compliance/batchcompliance/types"
 )
 
 const (
