@@ -3,7 +3,7 @@ package util_test
 import (
 	"testing"
 
-	"github.com/michimani/gotwi/internal/util"
+	"github.com/qlonolink/gotwi/internal/util"
 	"github.com/stretchr/testify/assert"
 )
 

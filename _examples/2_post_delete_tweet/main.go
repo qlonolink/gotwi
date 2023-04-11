@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/michimani/gotwi"
+	"github.com/qlonolink/gotwi"
 )
 
 const (

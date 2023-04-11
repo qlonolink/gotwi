@@ -3,8 +3,8 @@ package block
 import (
 	"context"
 
-	"github.com/michimani/gotwi"
-	"github.com/michimani/gotwi/user/block/types"
+	"github.com/qlonolink/gotwi"
+	"github.com/qlonolink/gotwi/user/block/types"
 )
 
 const (

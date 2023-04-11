@@ -7,9 +7,9 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/michimani/gotwi"
-	"github.com/michimani/gotwi/internal/util"
-	"github.com/michimani/gotwi/resources"
+	"github.com/qlonolink/gotwi"
+	"github.com/qlonolink/gotwi/internal/util"
+	"github.com/qlonolink/gotwi/resources"
 )
 
 type RoundTripFunc func(req *http.Request) *http.Response
