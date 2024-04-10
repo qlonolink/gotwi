@@ -28,7 +28,7 @@ type Tweet struct {
 
 type TweetAttachments struct {
 	MediaKeys []string `json:"media_keys,omitempty"`
-	PollIDs   []string `json:"poll_i_ds,omitempty"`
+	PollIDs   []string `json:"poll_ids,omitempty"`
 }
 
 type ContextAnnotation struct {
