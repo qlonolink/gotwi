@@ -47,3 +47,12 @@ func (fl TweetFieldList) Values() []string {
 
 	return s
 }
+
+func (fl TweetFieldList) HasContextAnnotations() bool {
+	for _, v := range fl {
+		if v == TweetFieldContextAnnotations {
+			return true
+		}
+	}
+	return false
+}

@@ -55,6 +55,10 @@ var listRecentQueryParameters = map[string]struct{}{
 }
 
 func (m ListMaxResults) Valid() bool {
+	return m >= 10 && m <= 500
+}
+
+func (m ListMaxResults) ValidWithContextAnnotations() bool {
 	return m >= 10 && m <= 100
 }
 
@@ -121,8 +125,14 @@ func (p *ListRecentInput) ParameterMap() map[string]string {
 		m["until_id"] = p.UntilID
 	}
 
-	if p.MaxResults.Valid() {
-		m["max_results"] = p.MaxResults.String()
+	if p.TweetFields.HasContextAnnotations() {
+		if p.MaxResults.ValidWithContextAnnotations() {
+			m["max_results"] = p.MaxResults.String()
+		}
+	} else {
+		if p.MaxResults.Valid() {
+			m["max_results"] = p.MaxResults.String()
+		}
 	}
 
 	if p.NextToken != "" {
@@ -224,8 +234,14 @@ func (p *ListAllInput) ParameterMap() map[string]string {
 		m["until_id"] = p.UntilID
 	}
 
-	if p.MaxResults.Valid() {
-		m["max_results"] = p.MaxResults.String()
+	if p.TweetFields.HasContextAnnotations() {
+		if p.MaxResults.ValidWithContextAnnotations() {
+			m["max_results"] = p.MaxResults.String()
+		}
+	} else {
+		if p.MaxResults.Valid() {
+			m["max_results"] = p.MaxResults.String()
+		}
 	}
 
 	if p.NextToken != "" {
