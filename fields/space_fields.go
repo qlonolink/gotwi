@@ -6,7 +6,6 @@ type SpaceField string
 const (
 	SpaceFieldHostIDs          SpaceField = "host_ids"
 	SpaceFieldCreatedAt        SpaceField = "created_at"
-	SpaceFieldCreatorID        SpaceField = "creator_id"
 	SpaceFieldID               SpaceField = "id"
 	SpaceFieldLang             SpaceField = "lang"
 	SpaceFieldInvitedUserIDs   SpaceField = "invited_user_ids"
@@ -18,6 +17,10 @@ const (
 	SpaceFieldUpdatedAt        SpaceField = "updated_at"
 	SpaceFieldScheduledStart   SpaceField = "scheduled_start"
 	SpaceFieldIsTicketed       SpaceField = "is_ticketed"
+
+	SpaceFieldEndedAt         SpaceField = "ended_at"
+	SpaceFieldSubscriberCount SpaceField = "subscriber_count"
+	SpaceFieldTopicIDs        SpaceField = "topic_ids"
 )
 
 func (f SpaceField) String() string {
