@@ -4,12 +4,12 @@ type PlaceField string
 
 // https://developer.twitter.com/en/docs/twitter-api/data-dictionary/object-model/place
 const (
+	PlaceFieldFullName        PlaceField = "full_name"
+	PlaceFieldID              PlaceField = "id"
 	PlaceFieldContainedWithin PlaceField = "contained_within"
 	PlaceFieldCountry         PlaceField = "country"
 	PlaceFieldCountryCode     PlaceField = "country_code"
-	PlaceFieldFullName        PlaceField = "full_name"
 	PlaceFieldGeo             PlaceField = "geo"
-	PlaceFieldID              PlaceField = "id"
 	PlaceFieldName            PlaceField = "name"
 	PlaceFieldPlaceType       PlaceField = "place_type"
 )
