@@ -2,6 +2,7 @@ package fields
 
 type SpaceField string
 
+// https://developer.twitter.com/en/docs/twitter-api/data-dictionary/object-model/space
 const (
 	SpaceFieldHostIDs          SpaceField = "host_ids"
 	SpaceFieldCreatedAt        SpaceField = "created_at"

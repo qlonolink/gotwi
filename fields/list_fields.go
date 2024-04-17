@@ -2,6 +2,7 @@ package fields
 
 type ListField string
 
+// https://developer.twitter.com/en/docs/twitter-api/data-dictionary/object-model/lists
 const (
 	ListFieldCreatedAt     ListField = "created_at"
 	ListFieldFollowerCount ListField = "follower_count"
@@ -9,6 +10,9 @@ const (
 	ListFieldPrivate       ListField = "private"
 	ListFieldDescription   ListField = "description"
 	ListFieldOwnerID       ListField = "owner_id"
+
+	ListFieldID   ListField = "id"
+	ListFieldName ListField = "name"
 )
 
 func (f ListField) String() string {

@@ -2,6 +2,7 @@ package fields
 
 type TweetField string
 
+// https://developer.twitter.com/en/docs/twitter-api/data-dictionary/object-model/tweet
 const (
 	TweetFieldAttachments        TweetField = "attachments"
 	TweetFieldAuthorID           TweetField = "author_id"
@@ -20,9 +21,11 @@ const (
 	TweetFieldPossiblySensitive  TweetField = "possibly_sensitive"
 	TweetFieldReferencedTweets   TweetField = "referenced_tweets"
 	TweetFieldReplySettings      TweetField = "reply_settings"
-	TweetFieldSource             TweetField = "source"
 	TweetFieldText               TweetField = "text"
 	TweetFieldWithheld           TweetField = "withheld"
+
+	TweetFieldEditHistoryTweetIDs TweetField = "edit_history_tweet_ids"
+	TweetFieldEditControls        TweetField = "edit_controls"
 )
 
 func (f TweetField) String() string {

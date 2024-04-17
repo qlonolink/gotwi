@@ -2,6 +2,7 @@ package fields
 
 type PlaceField string
 
+// https://developer.twitter.com/en/docs/twitter-api/data-dictionary/object-model/place
 const (
 	PlaceFieldContainedWithin PlaceField = "contained_within"
 	PlaceFieldCountry         PlaceField = "country"

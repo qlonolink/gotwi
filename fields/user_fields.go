@@ -2,6 +2,7 @@ package fields
 
 type UserField string
 
+// https://developer.twitter.com/en/docs/twitter-api/data-dictionary/object-model/user
 const (
 	UserFieldCreatedAt       UserField = "created_at"
 	UserFieldDescription     UserField = "description"
@@ -18,6 +19,8 @@ const (
 	UserFieldVerified        UserField = "verified"
 	UserFieldVerifiedType    UserField = "verified_type"
 	UserFieldWithheld        UserField = "withheld"
+
+	UserFieldConnectionStatus UserField = "connection_status"
 )
 
 func (f UserField) String() string {

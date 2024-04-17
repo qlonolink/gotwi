@@ -2,6 +2,7 @@ package fields
 
 type MediaField string
 
+// https://developer.twitter.com/en/docs/twitter-api/data-dictionary/object-model/media
 const (
 	MediaFieldDurationMs       MediaField = "duration_ms"
 	MediaFieldHeight           MediaField = "height"
