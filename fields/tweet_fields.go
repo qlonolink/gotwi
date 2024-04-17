@@ -14,7 +14,6 @@ const (
 	TweetFieldCreatedAt           TweetField = "created_at"
 	TweetFieldEditControls        TweetField = "edit_controls"
 	TweetFieldEntities            TweetField = "entities"
-	TweetFieldGeo                 TweetField = "geo"
 	TweetFieldInReplyToUserID     TweetField = "in_reply_to_user_id"
 	TweetFieldLang                TweetField = "lang"
 	TweetFieldNonPublicMetrics    TweetField = "non_public_metrics"
