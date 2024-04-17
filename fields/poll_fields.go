@@ -2,11 +2,12 @@ package fields
 
 type PollField string
 
+// https://developer.twitter.com/en/docs/twitter-api/data-dictionary/object-model/poll
 const (
-	PollFieldDurationMinutes PollField = "duration_minutes"
-	PollFieldEndDatetime     PollField = "end_datetime"
 	PollFieldID              PollField = "id"
 	PollFieldOptions         PollField = "options"
+	PollFieldDurationMinutes PollField = "duration_minutes"
+	PollFieldEndDatetime     PollField = "end_datetime"
 	PollFieldVotingStatus    PollField = "voting_status"
 )
 

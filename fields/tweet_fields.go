@@ -2,27 +2,28 @@ package fields
 
 type TweetField string
 
+// https://developer.twitter.com/en/docs/twitter-api/data-dictionary/object-model/tweet
 const (
-	TweetFieldAttachments        TweetField = "attachments"
-	TweetFieldAuthorID           TweetField = "author_id"
-	TweetFieldContextAnnotations TweetField = "context_annotations"
-	TweetFieldConversationID     TweetField = "conversation_id"
-	TweetFieldCreatedAt          TweetField = "created_at"
-	TweetFieldEntities           TweetField = "entities"
-	TweetFieldGeo                TweetField = "geo"
-	TweetFieldID                 TweetField = "id"
-	TweetFieldInReplyToUserID    TweetField = "in_reply_to_user_id"
-	TweetFieldLang               TweetField = "lang"
-	TweetFieldNonPublicMetrics   TweetField = "non_public_metrics"
-	TweetFieldPublicMetrics      TweetField = "public_metrics"
-	TweetFieldOrganicMetrics     TweetField = "organic_metrics"
-	TweetFieldPromotedMetrics    TweetField = "promoted_metrics"
-	TweetFieldPossiblySensitive  TweetField = "possibly_sensitive"
-	TweetFieldReferencedTweets   TweetField = "referenced_tweets"
-	TweetFieldReplySettings      TweetField = "reply_settings"
-	TweetFieldSource             TweetField = "source"
-	TweetFieldText               TweetField = "text"
-	TweetFieldWithheld           TweetField = "withheld"
+	TweetFieldID                  TweetField = "id"
+	TweetFieldText                TweetField = "text"
+	TweetFieldEditHistoryTweetIDs TweetField = "edit_history_tweet_ids"
+	TweetFieldAttachments         TweetField = "attachments"
+	TweetFieldAuthorID            TweetField = "author_id"
+	TweetFieldContextAnnotations  TweetField = "context_annotations"
+	TweetFieldConversationID      TweetField = "conversation_id"
+	TweetFieldCreatedAt           TweetField = "created_at"
+	TweetFieldEditControls        TweetField = "edit_controls"
+	TweetFieldEntities            TweetField = "entities"
+	TweetFieldInReplyToUserID     TweetField = "in_reply_to_user_id"
+	TweetFieldLang                TweetField = "lang"
+	TweetFieldNonPublicMetrics    TweetField = "non_public_metrics"
+	TweetFieldOrganicMetrics      TweetField = "organic_metrics"
+	TweetFieldPossiblySensitive   TweetField = "possibly_sensitive"
+	TweetFieldPromotedMetrics     TweetField = "promoted_metrics"
+	TweetFieldPublicMetrics       TweetField = "public_metrics"
+	TweetFieldReferencedTweets    TweetField = "referenced_tweets"
+	TweetFieldReplySettings       TweetField = "reply_settings"
+	TweetFieldWithheld            TweetField = "withheld"
 )
 
 func (f TweetField) String() string {

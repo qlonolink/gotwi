@@ -2,18 +2,19 @@ package fields
 
 type MediaField string
 
+// https://developer.twitter.com/en/docs/twitter-api/data-dictionary/object-model/media
 const (
-	MediaFieldDurationMs       MediaField = "duration_ms"
-	MediaFieldHeight           MediaField = "height"
 	MediaFieldMediaKey         MediaField = "media_key"
-	MediaFieldPreviewImageUrl  MediaField = "preview_image_url"
 	MediaFieldType             MediaField = "type"
 	MediaFieldUrl              MediaField = "url"
-	MediaFieldWidth            MediaField = "width"
-	MediaFieldPublicMetrics    MediaField = "public_metrics"
+	MediaFieldDurationMs       MediaField = "duration_ms"
+	MediaFieldHeight           MediaField = "height"
 	MediaFieldNonPublicMetrics MediaField = "non_public_metrics"
 	MediaFieldOrganicMetrics   MediaField = "organic_metrics"
+	MediaFieldPreviewImageUrl  MediaField = "preview_image_url"
 	MediaFieldPromotedMetrics  MediaField = "promoted_metrics"
+	MediaFieldPublicMetrics    MediaField = "public_metrics"
+	MediaFieldWidth            MediaField = "width"
 	MediaFieldAltText          MediaField = "alt_text"
 	MediaFieldVariants         MediaField = "variants"
 )

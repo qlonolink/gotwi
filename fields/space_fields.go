@@ -2,21 +2,24 @@ package fields
 
 type SpaceField string
 
+// https://developer.twitter.com/en/docs/twitter-api/data-dictionary/object-model/space
 const (
-	SpaceFieldHostIDs          SpaceField = "host_ids"
-	SpaceFieldCreatedAt        SpaceField = "created_at"
-	SpaceFieldCreatorID        SpaceField = "creator_id"
 	SpaceFieldID               SpaceField = "id"
+	SpaceFieldState            SpaceField = "state"
+	SpaceFieldCreatedAt        SpaceField = "created_at"
+	SpaceFieldEndedAt          SpaceField = "ended_at"
+	SpaceFieldHostIDs          SpaceField = "host_ids"
 	SpaceFieldLang             SpaceField = "lang"
+	SpaceFieldIsTicketed       SpaceField = "is_ticketed"
 	SpaceFieldInvitedUserIDs   SpaceField = "invited_user_ids"
 	SpaceFieldParticipantCount SpaceField = "participant_count"
+	SpaceFieldSubscriberCount  SpaceField = "subscriber_count"
+	SpaceFieldScheduledStart   SpaceField = "scheduled_start"
 	SpaceFieldSpeakerIDs       SpaceField = "speaker_ids"
 	SpaceFieldStartedAt        SpaceField = "started_at"
-	SpaceFieldState            SpaceField = "state"
 	SpaceFieldTitle            SpaceField = "title"
+	SpaceFieldTopicIDs         SpaceField = "topic_ids"
 	SpaceFieldUpdatedAt        SpaceField = "updated_at"
-	SpaceFieldScheduledStart   SpaceField = "scheduled_start"
-	SpaceFieldIsTicketed       SpaceField = "is_ticketed"
 )
 
 func (f SpaceField) String() string {

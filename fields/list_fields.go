@@ -2,12 +2,15 @@ package fields
 
 type ListField string
 
+// https://developer.twitter.com/en/docs/twitter-api/data-dictionary/object-model/lists
 const (
+	ListFieldID            ListField = "id"
+	ListFieldName          ListField = "name"
 	ListFieldCreatedAt     ListField = "created_at"
+	ListFieldDescription   ListField = "description"
 	ListFieldFollowerCount ListField = "follower_count"
 	ListFieldMemberCount   ListField = "member_count"
 	ListFieldPrivate       ListField = "private"
-	ListFieldDescription   ListField = "description"
 	ListFieldOwnerID       ListField = "owner_id"
 )
 
