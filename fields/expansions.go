@@ -18,7 +18,6 @@ const (
 	ExpansionParticipantIDs             Expansion = "participant_ids"
 	ExpansionInvitedUserIDs             Expansion = "invited_user_ids"
 	ExpansionSpeakerIDs                 Expansion = "speaker_ids"
-	ExpansionCreatorID                  Expansion = "creator_id"
 	ExpansionHostIDs                    Expansion = "host_ids"
 	ExpansionTopicsIDs                  Expansion = "topics_ids"
 	ExpansionOwnerID                    Expansion = "owner_id"
