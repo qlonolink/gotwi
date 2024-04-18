@@ -34,7 +34,9 @@ type SpacesLookupTweetsMeta struct {
 }
 
 type ListSearchStreamRulesMeta struct {
-	Sent *time.Time `json:"sent"`
+	Sent        *time.Time `json:"sent"`
+	NextToken   *string    `json:"next_token"`
+	ResultCount *int       `json:"result_count"`
 }
 
 type CreateSearchStreamRulesMeta struct {

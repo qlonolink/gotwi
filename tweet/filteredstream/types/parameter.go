@@ -14,7 +14,8 @@ type ListRulesInput struct {
 	accessToken string
 
 	// Query parameters
-	IDs []string
+	IDs             []string
+	PaginationToken string
 }
 
 var listRulesQueryParameters = map[string]struct{}{
@@ -49,6 +50,10 @@ func (p *ListRulesInput) ParameterMap() map[string]string {
 
 	if p.IDs != nil && len(p.IDs) > 0 {
 		m["ids"] = util.QueryValue(p.IDs)
+	}
+
+	if p.PaginationToken != "" {
+		m["pagination_token"] = p.PaginationToken
 	}
 
 	return m
