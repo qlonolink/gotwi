@@ -19,7 +19,8 @@ type ListRulesInput struct {
 }
 
 var listRulesQueryParameters = map[string]struct{}{
-	"ids": {},
+	"ids":              {},
+	"pagination_token": {},
 }
 
 func (p *ListRulesInput) SetAccessToken(token string) {
