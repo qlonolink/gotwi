@@ -117,10 +117,11 @@ type PromotedMetrics struct {
 }
 
 type TweetPublicMetrics struct {
-	RetweetCount *int `json:"retweet_count"`
-	ReplyCount   *int `json:"reply_count"`
-	LikeCount    *int `json:"like_count"`
-	QuoteCount   *int `json:"quote_count"`
+	RetweetCount    *int `json:"retweet_count"`
+	ReplyCount      *int `json:"reply_count"`
+	LikeCount       *int `json:"like_count"`
+	QuoteCount      *int `json:"quote_count"`
+	ImpressionCount *int `json:"impression_count"`
 }
 
 type ReferencedTweet struct {
