@@ -122,6 +122,7 @@ type TweetPublicMetrics struct {
 	LikeCount       *int `json:"like_count"`
 	QuoteCount      *int `json:"quote_count"`
 	ImpressionCount *int `json:"impression_count"`
+	BookmarkCount   *int `json:"bookmark_count"`
 }
 
 type ReferencedTweet struct {
