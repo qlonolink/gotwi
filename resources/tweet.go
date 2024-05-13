@@ -47,7 +47,7 @@ type TweetEntities struct {
 	Annotations []Annotation     `json:"annotations"`
 	CashTags    []TweetEntityTag `json:"cashtags"`
 	HashTags    []TweetEntityTag `json:"hashtags"`
-	Mentions    []TweetEntityTag `json:"mentions"`
+	Mentions    []Mention        `json:"mentions"`
 	URLs        []URL            `json:"urls"`
 }
 
@@ -63,6 +63,13 @@ type TweetEntityTag struct {
 	Start *int    `json:"start"`
 	End   *int    `json:"end"`
 	Tag   *string `json:"tag"`
+}
+
+type Mention struct {
+	Start    *int    `json:"start"`
+	End      *int    `json:"end"`
+	Username *string `json:"username"`
+	ID       *string `json:"id"`
 }
 
 type URL struct {
