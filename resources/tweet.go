@@ -146,7 +146,7 @@ type TweetWithheld struct {
 }
 
 type EditControls struct {
-	EditRemaining  *int       `json:"edit_remaining"`
+	EditsRemaining *int       `json:"edits_remaining"`
 	IsEditEligible *bool      `json:"is_edit_eligible"`
 	EditableUntil  *time.Time `json:"editable_until"`
 }
