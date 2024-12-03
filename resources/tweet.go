@@ -5,6 +5,7 @@ import "time"
 type Tweet struct {
 	ID                  *string             `json:"id"`
 	Text                *string             `json:"text"`
+	EditControls        *EditControls       `json:"edit_controls,omitempty"`
 	EditHistoryTweetIDs []*string           `json:"edit_history_tweet_ids"`
 	Attachments         *TweetAttachments   `json:"attachments,omitempty"`
 	AuthorID            *string             `json:"author_id,omitempty"`
@@ -101,6 +102,7 @@ type Geo struct {
 }
 
 type NonPublicMetrics struct {
+	Engagements       *int `json:"engagements"`
 	ImpressionCount   *int `json:"impression_count"`
 	UrlLinkClicks     *int `json:"url_link_clicks"`
 	UserProfileClicks *int `json:"user_profile_clicks"`
@@ -141,4 +143,10 @@ type ReferencedTweet struct {
 type TweetWithheld struct {
 	Copyright    *bool     `json:"copyright"`
 	CountryCodes []*string `json:"country_codes"`
+}
+
+type EditControls struct {
+	EditRemaining  *int       `json:"edit_remaining"`
+	IsEditEligible *bool      `json:"is_edit_eligible"`
+	EditableUntil  *time.Time `json:"editable_until"`
 }
