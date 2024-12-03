@@ -24,6 +24,8 @@ const (
 	TweetFieldReferencedTweets    TweetField = "referenced_tweets"
 	TweetFieldReplySettings       TweetField = "reply_settings"
 	TweetFieldWithheld            TweetField = "withheld"
+	TweetFieldGeo                 TweetField = "geo"
+	TweetFieldSource              TweetField = "source"
 )
 
 func (f TweetField) String() string {
