@@ -33,6 +33,7 @@ type ListRecentInput struct {
 	SinceID     string
 	UntilID     string
 	Granularity TweetCountsGranularity
+	NextToken   string
 }
 
 var listRecentQueryParameters = map[string]struct{}{
@@ -42,6 +43,7 @@ var listRecentQueryParameters = map[string]struct{}{
 	"since_id":    {},
 	"until_id":    {},
 	"granularity": {},
+	"next_token":  {},
 }
 
 func (p *ListRecentInput) SetAccessToken(token string) {
@@ -97,6 +99,10 @@ func (p *ListRecentInput) ParameterMap() map[string]string {
 		m["granularity"] = p.Granularity.String()
 	} else {
 		m["granularity"] = TweetCountsGranularityHour.String()
+	}
+
+	if p.NextToken != "" {
+		m["next_token"] = p.NextToken
 	}
 
 	return m
