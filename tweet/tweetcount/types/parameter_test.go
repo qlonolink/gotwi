@@ -93,6 +93,14 @@ func Test_TweetCountsRecent_ResolveEndpoint(t *testing.T) {
 			expect: endpointBase + "?granularity=day&query=from%3Atestuser",
 		},
 		{
+			name: "with next_token",
+			params: &types.ListRecentInput{
+				Query:     "from:testuser",
+				NextToken: "n_token",
+			},
+			expect: endpointBase + "?granularity=hour&next_token=n_token&query=from%3Atestuser",
+		},
+		{
 			name: "all query parameters",
 			params: &types.ListRecentInput{
 				Query:       "from:testuser",
@@ -101,8 +109,9 @@ func Test_TweetCountsRecent_ResolveEndpoint(t *testing.T) {
 				Granularity: types.TweetCountsGranularityMinute,
 				SinceID:     "sid",
 				UntilID:     "uid",
+				NextToken:   "n_token",
 			},
-			expect: endpointBase + "?end_time=2021-10-24T23%3A59%3A59Z&granularity=minute&query=from%3Atestuser&since_id=sid&start_time=2021-10-24T00%3A00%3A00Z&until_id=uid",
+			expect: endpointBase + "?end_time=2021-10-24T23%3A59%3A59Z&granularity=minute&next_token=n_token&query=from%3Atestuser&since_id=sid&start_time=2021-10-24T00%3A00%3A00Z&until_id=uid",
 		},
 		{
 			name:   "has no required parameter",

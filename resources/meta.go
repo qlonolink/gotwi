@@ -9,7 +9,8 @@ type PaginationMeta struct {
 }
 
 type TweetCountRecentMeta struct {
-	TotalTweetCount *int `json:"total_tweet_count"`
+	TotalTweetCount *int    `json:"total_tweet_count"`
+	NextToken       *string `json:"next_token"`
 }
 
 type TweetCountAllMeta struct {
